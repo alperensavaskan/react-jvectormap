@@ -13,6 +13,7 @@ export const VectorMap: FC<IVectorMapProps> = ({
   const containerRef = useRef<JQuery | null>(null);
   useLayoutEffect(() => {
     const mapContainer = containerRef.current;
+    console.log("test")
     if (!map) {
       console.error("[react-jvectormap]: no map was loaded!");
     }
